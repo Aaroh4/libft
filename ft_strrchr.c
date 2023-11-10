@@ -6,7 +6,7 @@
 /*   By: ahamalai <ahamalai@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 15:22:16 by ahamalai          #+#    #+#             */
-/*   Updated: 2023/10/30 17:36:42 by ahamalai         ###   ########.fr       */
+/*   Updated: 2023/11/07 15:23:51 by ahamalai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,18 +15,20 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	int	i;
+	int		i;
+	char	p;
 
 	i = 0;
+	p = (char)c;
 	while (s[i] != '\0')
 		i++;
 	while (i != 0)
 	{
-		if (s[i] == c)
+		if (s[i] == p)
 			return (&((char *)s)[i]);
 		i--;
 	}
-	if (s[i] == c)
+	if (s[i] == p)
 		return (&((char *)s)[i]);
 	return (0);
 }

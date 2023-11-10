@@ -1,45 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ahamalai <ahamalai@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/27 14:29:27 by ahamalai          #+#    #+#             */
-/*   Updated: 2023/11/07 15:28:27 by ahamalai         ###   ########.fr       */
+/*   Created: 2023/11/07 10:50:25 by ahamalai          #+#    #+#             */
+/*   Updated: 2023/11/10 12:57:14 by ahamalai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
-#include <stdio.h>
-#include <string.h>
-
-char	*ft_strchr(const char *s, int c)
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	int		i;
-	char	p;
 	char	*str;
+	int		i;
 
 	i = 0;
-	p = (char)c;
-	str = (char *)s;
-	while (str[i])
+	if (!s || !f)
+		return (0);
+	str = (char *)malloc(ft_strlen(s) + 1);
+	if (str == 0)
+		return (0);
+	while (s[i] != '\0')
 	{
-		if (str[i] == p)
-			return (&str[i]);
+		str[i] = f(i, s[i]);
 		i++;
 	}
-	if (str[i] == p)
-		return (&str[i]);
-	return (0);
+	str[i] = '\0';
+	return (str);
 }
-/*
-int	main(void)
-{
-	char    i;
-    char    *str;
-
-    i = 'e';
-    str = "teste";
-    printf("%s\n", ft_strchr(str, i));
-    printf("%s", strchr(str, i));	
-}*/

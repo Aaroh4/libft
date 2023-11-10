@@ -6,7 +6,7 @@
 #    By: ahamalai <ahamalai@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/19 12:03:42 by ahamalai          #+#    #+#              #
-#    Updated: 2023/11/03 14:28:09 by ahamalai         ###   ########.fr        #
+#    Updated: 2023/11/10 13:15:14 by ahamalai         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,8 @@ SRC = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c \
 	  ft_strncmp.c ft_memchr.c ft_memcmp.c ft_strnstr.c \
 	  ft_atoi.c ft_calloc.c ft_strdup.c ft_putchar_fd.c \
 	  ft_putendl_fd.c ft_putnbr_fd.c ft_putstr_fd.c \
-	  ft_strjoin.c ft_substr.c ft_strtrim.c ft_itoa.c
+	  ft_strjoin.c ft_substr.c ft_strtrim.c ft_itoa.c \
+	  ft_split.c ft_striteri.c ft_strmapi.c
 
 OBJ = $(SRC:.c=.o)
 
@@ -42,3 +43,5 @@ re: fclean all
 
 libft.a: $(OBJ)
 	ar -rc libft.a $(OBJ)
+
+.PHONY: all clean fclean re 

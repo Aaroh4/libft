@@ -1,45 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ahamalai <ahamalai@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/27 14:29:27 by ahamalai          #+#    #+#             */
-/*   Updated: 2023/11/07 15:28:27 by ahamalai         ###   ########.fr       */
+/*   Created: 2023/11/06 16:33:20 by ahamalai          #+#    #+#             */
+/*   Updated: 2023/11/07 10:50:14 by ahamalai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
-
-char	*ft_strchr(const char *s, int c)
+void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	int		i;
-	char	p;
-	char	*str;
+	unsigned int	i;
 
+	if (!s || !f)
+		return ;
 	i = 0;
-	p = (char)c;
-	str = (char *)s;
-	while (str[i])
+	while (s[i])
 	{
-		if (str[i] == p)
-			return (&str[i]);
+		f(i, s + i);
 		i++;
 	}
-	if (str[i] == p)
-		return (&str[i]);
-	return (0);
 }
-/*
-int	main(void)
-{
-	char    i;
-    char    *str;
-
-    i = 'e';
-    str = "teste";
-    printf("%s\n", ft_strchr(str, i));
-    printf("%s", strchr(str, i));	
-}*/

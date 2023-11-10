@@ -6,40 +6,42 @@
 /*   By: ahamalai <ahamalai@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/28 13:31:09 by ahamalai          #+#    #+#             */
-/*   Updated: 2023/11/06 12:40:59 by ahamalai         ###   ########.fr       */
+/*   Updated: 2023/11/10 12:53:54 by ahamalai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
+int	overflowfix(int neg)
+{
+	if (neg == 1)
+		return (-1);
+	else
+		return (0);
+}
 
 int	ft_atoi(const char *str)
 {
-	int	i;
-	int	ret;
-	int	neg;
+	long int	ret;
+	long int	old_ret;
+	int			neg;
 
-	i = 0;
 	neg = 1;
 	ret = 0;
-	while (str[i] == ' ' || str[i] == '\n'
-		|| str[i] == '\r' || str[i] == '\v'
-		|| str[i] == '\f' || str[i] == '\t')
-		i++;
-	if (str[i] == '-' || str[i] == '+')
+	while (*str == ' ' || *str == '\n' || *str == '\r'
+		|| *str == '\v' || *str == '\f' || *str == '\t')
+		str++;
+	if (*str == '-' || *str == '+')
 	{
-		if (str[i] == '-')
+		if (*str == '-')
 			neg = -1;
-		i++;
+		str++;
 	}
-	while (str[i] <= '9' && str[i] >= '0')
+	while (*str <= '9' && *str >= '0')
 	{
-		ret = ret * 10 + (str[i] - 48);
-		i++;
+		old_ret = ret;
+		ret = ret * 10 + (*str - 48);
+		if (old_ret > ret)
+			return (overflowfix(neg));
+		str++;
 	}
-	return (ret * neg);
+	return ((int)ret * neg);
 }
-/*
-int	main(void)
-{
-	printf("%d", ft_atoi("-2"));
-}*/

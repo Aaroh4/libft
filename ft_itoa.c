@@ -6,7 +6,7 @@
 /*   By: ahamalai <ahamalai@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/03 13:56:49 by ahamalai          #+#    #+#             */
-/*   Updated: 2023/11/06 12:38:47 by ahamalai         ###   ########.fr       */
+/*   Updated: 2023/11/07 17:15:40 by ahamalai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -40,13 +40,21 @@ char	*ft_itoa(int n)
 	str[i] = '\0';
 	if (num < 0)
 		num *= -1;
-	i--;
-	while (i >= 0)
+	while (i > 0)
 	{
-		str[i--] = (num % 10) + '0';
+		i--;
+		str[i] = (num % 10) + '0';
 		num = num / 10;
 	}
 	if (n < 0)
 		str[0] = '-';
 	return (str);
 }
+/*
+#include <stdio.h>
+
+int	main(void)
+{
+	printf("%s", ft_itoa(0));
+	return (0);
+}*/
