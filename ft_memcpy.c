@@ -6,9 +6,10 @@
 /*   By: ahamalai <ahamalai@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/28 13:30:47 by ahamalai          #+#    #+#             */
-/*   Updated: 2023/11/01 12:15:53 by ahamalai         ###   ########.fr       */
+/*   Updated: 2023/11/13 11:09:19 by ahamalai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
@@ -27,11 +28,3 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
-
-/*
-char * str[] = "0123";
-
-ft_memcpy(str+1, str);
-
-str == "0000"
-*/

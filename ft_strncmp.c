@@ -6,12 +6,10 @@
 /*   By: ahamalai <ahamalai@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/28 13:31:51 by ahamalai          #+#    #+#             */
-/*   Updated: 2023/11/06 12:27:09 by ahamalai         ###   ########.fr       */
+/*   Updated: 2023/11/13 11:12:06 by ahamalai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
-//#include <string.h>
 #include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
@@ -29,9 +27,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (((unsigned char *)s1)[i] - ((unsigned char *)s2)[i]);
 }
-/*
-int    main(void)
-{
-    printf("%d\n", ft_strncmp("abZ", "abc", 3));
-    printf("%d", strncmp("abZ", "abc", 3));
-}*/

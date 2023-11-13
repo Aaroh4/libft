@@ -6,11 +6,9 @@
 /*   By: ahamalai <ahamalai@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/28 13:29:36 by ahamalai          #+#    #+#             */
-/*   Updated: 2023/10/30 16:44:14 by ahamalai         ###   ########.fr       */
+/*   Updated: 2023/11/13 11:10:42 by ahamalai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-//#include <stdio.h>
 
 int	ft_isascii(int c)
 {
@@ -19,8 +17,3 @@ int	ft_isascii(int c)
 	else
 		return (0);
 }
-/*
-int	main(void)
-{
-	printf("%d", ft_isascii('c'));
-}*/

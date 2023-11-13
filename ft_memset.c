@@ -6,11 +6,11 @@
 /*   By: ahamalai <ahamalai@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/28 13:31:29 by ahamalai          #+#    #+#             */
-/*   Updated: 2023/10/30 16:06:28 by ahamalai         ###   ########.fr       */
+/*   Updated: 2023/11/13 11:11:40 by ahamalai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <stddef.h>
-//#include <stdio.h>
 
 void	*ft_memset(void *b, int c, size_t len)
 {
@@ -27,11 +27,3 @@ void	*ft_memset(void *b, int c, size_t len)
 	}
 	return (b);
 }
-/*
-int	main(void)
-{
-	char b[6];
-	ft_memset(b, 'a', 5);
-	b[5] = '\0';
-	printf("%s", b);
-}*/

@@ -6,11 +6,9 @@
 /*   By: ahamalai <ahamalai@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/28 13:29:02 by ahamalai          #+#    #+#             */
-/*   Updated: 2023/10/30 16:45:42 by ahamalai         ###   ########.fr       */
+/*   Updated: 2023/11/13 11:07:46 by ahamalai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-//#include <stdio.h>
 
 int	ft_isalnum(int c)
 {
@@ -21,8 +19,3 @@ int	ft_isalnum(int c)
 	else
 		return (0);
 }
-/*
-int	main(void)
-{
-	printf("%d", ft_isalnum('/'));
-}*/

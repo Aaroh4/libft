@@ -6,11 +6,9 @@
 /*   By: ahamalai <ahamalai@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/28 13:28:38 by ahamalai          #+#    #+#             */
-/*   Updated: 2023/10/30 16:46:11 by ahamalai         ###   ########.fr       */
+/*   Updated: 2023/11/13 11:11:23 by ahamalai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-//#include <stdio.h>
 
 int	ft_isdigit(int c)
 {
@@ -19,8 +17,3 @@ int	ft_isdigit(int c)
 	else
 		return (0);
 }
-/*
-int	main(void)
-{
-	printf("%d", ft_isdigit('0'));
-}*/

@@ -6,9 +6,10 @@
 /*   By: ahamalai <ahamalai@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 11:56:39 by ahamalai          #+#    #+#             */
-/*   Updated: 2023/11/10 12:55:24 by ahamalai         ###   ########.fr       */
+/*   Updated: 2023/11/13 11:08:29 by ahamalai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
@@ -31,11 +32,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		ret[len] = s[len];
 	return (ret);
 }
-/*
-#include <stdio.h>
-int main(void)
-{
-  //printf("%s", ft_substr("", 1, 1));
-  char *str = ft_substr("", 1, 1);
-  printf("%s", str);
-}*/

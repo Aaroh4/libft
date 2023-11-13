@@ -6,11 +6,9 @@
 /*   By: ahamalai <ahamalai@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/28 13:28:14 by ahamalai          #+#    #+#             */
-/*   Updated: 2023/10/30 16:46:25 by ahamalai         ###   ########.fr       */
+/*   Updated: 2023/11/13 11:08:43 by ahamalai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-//#include <stdio.h>
 
 int	ft_isalpha(int c)
 {
@@ -20,8 +18,3 @@ int	ft_isalpha(int c)
 	else
 		return (0);
 }
-/*
-int	main(void)
-{
-	printf("%d", ft_isalpha('a'));
-}*/

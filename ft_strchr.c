@@ -6,12 +6,9 @@
 /*   By: ahamalai <ahamalai@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 14:29:27 by ahamalai          #+#    #+#             */
-/*   Updated: 2023/11/07 15:28:27 by ahamalai         ###   ########.fr       */
+/*   Updated: 2023/11/13 11:10:55 by ahamalai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
-#include <string.h>
 
 char	*ft_strchr(const char *s, int c)
 {
@@ -32,14 +29,3 @@ char	*ft_strchr(const char *s, int c)
 		return (&str[i]);
 	return (0);
 }
-/*
-int	main(void)
-{
-	char    i;
-    char    *str;
-
-    i = 'e';
-    str = "teste";
-    printf("%s\n", ft_strchr(str, i));
-    printf("%s", strchr(str, i));	
-}*/

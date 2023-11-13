@@ -6,9 +6,10 @@
 /*   By: ahamalai <ahamalai@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 11:56:12 by ahamalai          #+#    #+#             */
-/*   Updated: 2023/11/06 12:29:31 by ahamalai         ###   ########.fr       */
+/*   Updated: 2023/11/13 11:07:13 by ahamalai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
