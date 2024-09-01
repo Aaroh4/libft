@@ -1,0 +1,1 @@
+Libft is a custom implementation of a subset of the standard C library functions. This project provides a foundational set of utility functions that can be reused in various C programming projects. The goal is to deepen understanding of how standard functions work by creating them from scratch and implementing additional useful functionalities.
